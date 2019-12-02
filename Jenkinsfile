@@ -7,7 +7,7 @@ pipeline {
 	stages {
 		stage("Maven-Build"){
 			steps {
-				withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin'])
+				
 				sh 'mvn -Dmaven.test.skip=true install'
 			}
 		}
