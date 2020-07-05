@@ -14,7 +14,7 @@ pipeline {
 		stage ("Docker-Login") {
 			steps {
 				withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin'])
-				sh 'docker login -u kishorsg -p ka29_s907'
+				sh 'docker login -u kishorsg -p '
 			}
 		}
 		stage ("Deleting-Previous-Docker-Builds"){
